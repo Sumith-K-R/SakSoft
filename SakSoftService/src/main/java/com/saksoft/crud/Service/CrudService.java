@@ -37,29 +37,18 @@ public class CrudService {
 	public List<User> getAll() {
 		return this.repo.findAll();
 	}
-	//@Transactional(propagation=Propagation.NEVER)
 	public boolean update(User user) {
 
 		
 		 Optional<User> findById = this.repo.findById(user.getId());
 		 if(findById.isPresent()) {
-			// this.repo.deleteById(findById.get().getId());
-			 this.repo.save(findById.get());
+			 this.repo.save(user);
 			 return true;
 		 }else {
 			 return false;
 		 }
 		 
-	
-	
-		/*
-		 * 
-		 * Optional<User> findById = this.repo.findById(user.getId());
-		 * if(findById.isPresent()) { this.repo.deleteById(findById.get().getId());
-		 * this.repo.save(findById.get()); return true; }else { return false; }
-		 * 
-		 * 
-		 */}
+	}
 	public boolean delete(Long id) {
 		Optional<User> findById = this.repo.findById(id);
 		if(findById.isPresent()) {
