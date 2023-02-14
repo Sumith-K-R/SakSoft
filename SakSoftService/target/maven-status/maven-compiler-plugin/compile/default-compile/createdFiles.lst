@@ -1,0 +1,10 @@
+com\saksoft\crud\controller\CrudController.class
+com\saksoft\crud\model\GenericErrorResponse.class
+com\saksoft\crud\CrudExceptionHandler.class
+com\saksoft\crud\controller\IndexController.class
+com\saksoft\crud\CrudConfig.class
+com\saksoft\crud\repo\CrudRepo.class
+com\saksoft\crud\entity\User.class
+com\saksoft\crud\model\UserNotFoundException.class
+com\saksoft\crud\SakSoftServiceApplication.class
+com\saksoft\crud\Service\CrudService.class
